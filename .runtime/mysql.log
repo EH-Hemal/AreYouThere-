@@ -1,0 +1,64 @@
+2026-10-20T23:03:03.321950Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.44) starting as process 6056
+2026-10-20T23:03:03.357553Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-20T23:03:03.690063Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-20T23:03:03.953210Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-10-20T23:03:03.953889Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-10-20T23:03:04.025199Z 0 [System] [MY-010931] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: ready for connections. Version: '8.0.44'  socket: ''  port: 3307  MySQL Community Server - GPL.
+2026-10-20T23:03:04Z UTC - mysqld got exception 0xc0000005 ;
+Most likely, you have hit a bug, but this error can also be caused by malfunctioning hardware.
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+7fff1a77a679    ntdll.dll!RtlTryAcquireSRWLockExclusive()
+7ffeee791689    jemalloc.dll!je_malloc_usable_size()
+7ffeee7901e5    jemalloc.dll!je_malloc_usable_size()
+7ffeee791e10    jemalloc.dll!je_malloc_usable_size()
+7ffeee791968    jemalloc.dll!je_malloc_usable_size()
+7ffeee793ac6    jemalloc.dll!je_malloc_usable_size()
+7ffeee7603d0    jemalloc.dll!???
+7ff6409e77dd    mysqld.exe!???
+7ff6409e7555    mysqld.exe!???
+7ff640f8ac84    mysqld.exe!???
+7ff63f94cebc    mysqld.exe!???
+7ff63f94c759    mysqld.exe!???
+7ff63f91732c    mysqld.exe!???
+7ff640f91699    mysqld.exe!???
+7ff6409e4edc    mysqld.exe!???
+7fff1826cd30    ucrtbase.dll!wcsrchr()
+7fff1a2fdda7    KERNEL32.DLL!BaseThreadInitThunk()
+7fff1a79ee4c    ntdll.dll!RtlUserThreadStart()
+The manual page at http://dev.mysql.com/doc/mysql/en/crashing.html contains
+information that should help you find out what is causing the crash.
+2026-10-21T20:13:23.080760Z 0 [System] [MY-010116] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe (mysqld 8.0.44) starting as process 16044
+2026-10-21T20:13:23.164596Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-21T20:13:24.340776Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-21T20:13:24.564636Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-10-21T20:13:24.565020Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-10-21T20:13:24.661447Z 0 [System] [MY-010931] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.44'  socket: ''  port: 3307  MySQL Community Server - GPL.
+2026-10-21T20:40:22.667783Z 0 [System] [MY-010116] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe (mysqld 8.0.44) starting as process 13712
+2026-10-21T20:40:22.789428Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-21T20:40:23.751079Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-21T20:40:24.289302Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-10-21T20:40:24.290103Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-10-21T20:40:24.429989Z 0 [System] [MY-010931] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.44'  socket: ''  port: 3307  MySQL Community Server - GPL.
+2026-10-22T19:37:12.125210Z 0 [System] [MY-010116] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe (mysqld 8.0.44) starting as process 15320
+2026-10-22T19:37:12.221264Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-22T19:37:13.213516Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-10-22T19:37:13.572907Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-10-22T19:37:13.573501Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-10-22T19:37:13.652275Z 0 [System] [MY-010931] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.44'  socket: ''  port: 3307  MySQL Community Server - GPL.
+2026-10-22T20:10:34.738362Z 0 [System] [MY-010116] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe (mysqld 8.0.44) starting as process 4760
+2026-10-22T20:10:34.798255Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-10-22T20:10:34.802433Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2026-10-22T20:10:34.803085Z 1 [ERROR] [MY-012278] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2026-10-22T20:10:34.803755Z 1 [ERROR] [MY-010334] [Server] Failed to initialize DD Storage Engine
+2026-10-22T20:10:34.804494Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2026-10-22T20:10:34.805053Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-10-22T20:10:34.807183Z 0 [System] [MY-010910] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe: Shutdown complete (mysqld 8.0.44)  MySQL Community Server - GPL.
+2026-11-05T17:54:27.756254Z 0 [System] [MY-010116] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe (mysqld 8.0.44) starting as process 4644
+2026-11-05T17:54:27.838263Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2026-11-05T17:54:28.759158Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2026-11-05T17:54:29.318989Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2026-11-05T17:54:29.319588Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2026-11-05T17:54:29.428229Z 0 [System] [MY-010931] [Server] C:\Users\USER\Desktop\All Files\AreYouThere\.tools\mysql\bin\mysqld.exe: ready for connections. Version: '8.0.44'  socket: ''  port: 3307  MySQL Community Server - GPL.

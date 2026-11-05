@@ -1,0 +1,38 @@
+[
+  {
+    "name": "backend",
+    "pid": 18316,
+    "command": [
+      "C:\\Users\\USER\\Desktop\\All Files\\AreYouThere\\.venv\\Scripts\\python.exe",
+      "-m",
+      "daphne",
+      "-b",
+      "127.0.0.1",
+      "-p",
+      "8000",
+      "config.asgi:application"
+    ]
+  },
+  {
+    "name": "scheduler",
+    "pid": 8612,
+    "command": [
+      "C:\\Users\\USER\\Desktop\\All Files\\AreYouThere\\.venv\\Scripts\\python.exe",
+      "backend/manage.py",
+      "run_scheduler"
+    ]
+  },
+  {
+    "name": "dashboard",
+    "pid": 8772,
+    "command": [
+      "node",
+      "C:\\Users\\USER\\Desktop\\All Files\\AreYouThere\\node_modules\\vite\\bin\\vite.js",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "5173",
+      "--strictPort"
+    ]
+  }
+]

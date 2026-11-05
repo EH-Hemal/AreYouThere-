@@ -1,0 +1,26 @@
+from pathlib import Path
+def edit(path,old,new):
+ p=Path(path);s=p.read_text(encoding='utf-8');assert old in s,path;p.write_text(s.replace(old,new),encoding='utf-8')
+edit('backend/core/views.py','from .models import User', 'from . import timing\nfrom .models import User')
+edit('backend/core/views.py','Session.objects.create(owner=u,title=title,course=course)','Session.objects.create(owner=u,title=title,course=course,**timing.settings(request.data))')
+edit('backend/core/views.py',"        if s.status=='ended': raise ValidationError('This session has ended.')", "        timing.advance(s)\n        if request.data.get('session_id') is not None and str(request.data['session_id'])!=str(s.pk): raise ValidationError('Code does not match the selected class.')\n        if s.status=='ended': raise ValidationError('This session has ended.')")
+edit('backend/core/views.py',"        close_expired(s)\n        if request.method", "        timing.advance(s)\n        close_expired(s)\n        if request.method")
+edit('backend/core/views.py',"if action=='start' and s.status=='lobby': s.status='live';s.started_at=now", "if action=='start' and s.status=='lobby':\n                s.status='live';s.started_at=now\n                s.ends_at=now+timedelta(seconds=s.class_duration) if s.class_duration else None\n                s.next_question_at=timing.next_time(s,now)")
+edit('backend/core/views.py',"        if s.status!='live' or q.status", "        timing.advance(s,now)\n        if s.status!='live' or q.status")
+edit('backend/core/views.py',"        if not text or len(text)>1000", "        opens,closes=timing.recovery(q)\n        if opens and not opens<=timezone.now()<closes: raise ValidationError('The recovery window is not open.')\n        if not text or len(text)>1000")
+edit('backend/core/views.py',"Question.objects.create(session=s,**validate_question(request.data))", "Question.objects.create(session=s,**validate_question({'duration':s.question_duration,**request.data}))")
+p=Path('backend/core/views.py');p.write_text(p.read_text(encoding='utf-8')+'''\n@api_view(['GET'])
+def directory(request):
+    from django.db.models import Q
+    now=timezone.now()
+    qs=Session.objects.filter(status__in=['lobby','live']).filter(Q(ends_at__isnull=True)|Q(ends_at__gt=now)).select_related('owner')
+    return APIResponse([{'id':s.pk,'title':s.title,'teacher':s.owner.get_full_name() or s.owner.username,'status':s.status} for s in qs.order_by('-created_at')[:200]])
+''',encoding='utf-8')
+edit('backend/config/urls.py',"path('api/sessions/join/',v.join)","path('api/sessions/join/',v.join),path('api/classes/',v.directory)")
+edit('backend/core/services.py','from .models import Session, Question','from .models import Session, Question\nfrom . import timing')
+edit('backend/core/services.py',"    close_expired(session,now)\n    if session.status", "    timing.advance(session,now)\n    close_expired(session,now)\n    if session.status")
+edit('backend/core/services.py',"    question.schedule_error='';question.save();notify(session.pk)","    question.schedule_error='';question.save()\n    session.next_question_at=timing.next_time(session,now);session.save(update_fields=['next_question_at']);notify(session.pk)")
+edit('backend/core/services.py',"    for sid in sorted(ids):", "    ids.update(Session.objects.filter(status='live').values_list('id',flat=True))\n    for sid in sorted(ids):")
+edit('backend/core/services.py',"            close_expired(session,now)","            timing.advance(session,now)\n            close_expired(session,now)\n            if session.status=='live' and session.next_question_at and now>=session.next_question_at and not session.questions.filter(status='open').exists():\n                queued=session.questions.filter(status='draft').first()\n                if queued: open_question(session,queued,now)")
+edit('backend/core/services.py',"    if teacher: data['correct_option']", "    opens,closes=timing.recovery(q)\n    data.update(recovery_opens_at=opens,recovery_closes_at=closes)\n    if teacher: data['correct_option']")
+edit('backend/core/services.py',"return {'id':session.pk,'title'", "return {**{k:getattr(session,k) for k in timing.FIELDS},'id':session.pk,'title'")

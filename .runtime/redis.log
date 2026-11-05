@@ -1,0 +1,96 @@
+[768] 22 Oct 02:14:09.040 # --- Memurai is starting ---
+[768] 22 Oct 02:14:09.041 # Memurai Developer version=4.1.2, API=7.2.5, instance-name=, pid=768, just started
+[768] 22 Oct 02:14:09.044 # Usage of Memurai Developer Edition in a production environment is prohibited; it also automatically shuts down after 10 days. For more details see: https://www.memurai.com/faq
+[768] 22 Oct 02:14:09.046 # Configuration loaded
+[768] 22 Oct 02:14:09.048 * monotonic clock: Windows QueryPerformanceCounter
+[768] 22 Oct 02:14:09.052 * Running mode=standalone, port=6379.
+[768] 22 Oct 02:14:09.063 # Memurai QID = 80AC3B7098AED5CB;772BA1BB2037079A;BB1F62DB6E493C4C;770FF1E7E284D5;CEB42C426FA5E77E;CEB42F426FA5EC97
+[768] 22 Oct 02:14:09.067 * Server initialized
+[768] 22 Oct 02:14:09.071 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+[768] 22 Oct 02:14:09.077 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+[768] 22 Oct 02:14:09.079 * Ready to accept connections tcp
+[768] 22 Oct 02:23:27.662 * 100 changes in 300 seconds. Saving...
+[768] 22 Oct 02:23:27.839 * Background saving started by pid 14660
+[14660] 22 Oct 02:23:28.268 * DB saved on disk
+[768] 22 Oct 02:23:28.295 * Background saving terminated with success
+[768] 22 Oct 02:28:29.087 * 100 changes in 300 seconds. Saving...
+[768] 22 Oct 02:28:29.302 * Background saving started by pid 3212
+[3212] 22 Oct 02:28:29.891 * DB saved on disk
+[768] 22 Oct 02:28:29.954 * Background saving terminated with success
+[14112] 22 Oct 02:40:40.321 # --- Memurai is starting ---
+[14112] 22 Oct 02:40:40.324 # Memurai Developer version=4.1.2, API=7.2.5, instance-name=, pid=14112, just started
+[14112] 22 Oct 02:40:40.325 # Usage of Memurai Developer Edition in a production environment is prohibited; it also automatically shuts down after 10 days. For more details see: https://www.memurai.com/faq
+[14112] 22 Oct 02:40:40.325 # Configuration loaded
+[14112] 22 Oct 02:40:40.327 * monotonic clock: Windows QueryPerformanceCounter
+[14112] 22 Oct 02:40:40.329 * Running mode=standalone, port=6379.
+[14112] 22 Oct 02:40:40.337 # Memurai QID = 80AC3B7098AED5CB;772BA1BB2037079A;BB1F62DB6E493C4C;770FF1E7E284D5;CEB42C426FA5E77E;CEB42F426FA5EC97
+[14112] 22 Oct 02:40:40.341 * Server initialized
+[14112] 22 Oct 02:40:40.376 * Reading RDB base file on AOF loading...
+[14112] 22 Oct 02:40:40.377 * Loading RDB produced by version 7.2.5
+[14112] 22 Oct 02:40:40.379 * RDB age 1591 seconds
+[14112] 22 Oct 02:40:40.379 * RDB memory usage when created 0.72 Mb
+[14112] 22 Oct 02:40:40.380 * RDB is base AOF
+[14112] 22 Oct 02:40:40.380 * Done loading RDB, keys loaded: 0, keys expired: 0.
+[14112] 22 Oct 02:40:40.385 * DB loaded from base file appendonly.aof.1.base.rdb: 0.024 seconds
+[14112] 22 Oct 02:40:40.406 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.020 seconds
+[14112] 22 Oct 02:40:40.407 * DB loaded from append only file: 0.046 seconds
+[14112] 22 Oct 02:40:40.408 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+[14112] 22 Oct 02:40:40.409 * Ready to accept connections tcp
+[14112] 22 Oct 02:45:41.088 * 100 changes in 300 seconds. Saving...
+[14112] 22 Oct 02:45:41.104 * Background saving started by pid 5324
+[5324] 22 Oct 02:45:41.151 * DB saved on disk
+[14112] 22 Oct 02:45:41.214 * Background saving terminated with success
+[1912] 23 Oct 01:37:28.824 # --- Memurai is starting ---
+[1912] 23 Oct 01:37:28.824 # Memurai Developer version=4.1.2, API=7.2.5, instance-name=, pid=1912, just started
+[1912] 23 Oct 01:37:28.824 # Usage of Memurai Developer Edition in a production environment is prohibited; it also automatically shuts down after 10 days. For more details see: https://www.memurai.com/faq
+[1912] 23 Oct 01:37:28.824 # Configuration loaded
+[1912] 23 Oct 01:37:28.838 * monotonic clock: Windows QueryPerformanceCounter
+[1912] 23 Oct 01:37:28.838 * Running mode=standalone, port=6379.
+[1912] 23 Oct 01:37:28.848 # Memurai QID = 80AC3B7098AED5CB;772BA1BB2037079A;BB1F62DB6E493C4C;770FF1E7E284D5;CEB42C426FA5E77E;CEB42F426FA5EC97
+[1912] 23 Oct 01:37:28.848 * Server initialized
+[1912] 23 Oct 01:37:28.872 * Reading RDB base file on AOF loading...
+[1912] 23 Oct 01:37:28.872 * Loading RDB produced by version 7.2.5
+[1912] 23 Oct 01:37:28.887 * RDB age 84199 seconds
+[1912] 23 Oct 01:37:28.889 * RDB memory usage when created 0.72 Mb
+[1912] 23 Oct 01:37:28.889 * RDB is base AOF
+[1912] 23 Oct 01:37:28.889 * Done loading RDB, keys loaded: 0, keys expired: 0.
+[1912] 23 Oct 01:37:28.903 * DB loaded from base file appendonly.aof.1.base.rdb: 0.034 seconds
+[1912] 23 Oct 01:37:28.921 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.016 seconds
+[1912] 23 Oct 01:37:28.922 * DB loaded from append only file: 0.053 seconds
+[1912] 23 Oct 01:37:28.922 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+[1912] 23 Oct 01:37:28.922 * Ready to accept connections tcp
+[1912] 23 Oct 01:42:29.071 * 100 changes in 300 seconds. Saving...
+[1912] 23 Oct 01:42:29.088 * Background saving started by pid 2192
+[2192] 23 Oct 01:42:29.142 * DB saved on disk
+[1912] 23 Oct 01:42:29.201 * Background saving terminated with success
+[1912] 23 Oct 02:00:14.714 * 100 changes in 300 seconds. Saving...
+[1912] 23 Oct 02:00:14.722 * Background saving started by pid 18364
+[18364] 23 Oct 02:00:14.773 * DB saved on disk
+[1912] 23 Oct 02:00:14.837 * Background saving terminated with success
+[16696] 05 Nov 23:54:41.155 # --- Memurai is starting ---
+[16696] 05 Nov 23:54:41.157 # Memurai Developer version=4.1.2, API=7.2.5, instance-name=, pid=16696, just started
+[16696] 05 Nov 23:54:41.157 # Usage of Memurai Developer Edition in a production environment is prohibited; it also automatically shuts down after 10 days. For more details see: https://www.memurai.com/faq
+[16696] 05 Nov 23:54:41.159 # Configuration loaded
+[16696] 05 Nov 23:54:41.162 * monotonic clock: Windows QueryPerformanceCounter
+[16696] 05 Nov 23:54:41.163 * Running mode=standalone, port=6379.
+[16696] 05 Nov 23:54:41.172 # Memurai QID = 80AC3B7098AED5CB;772BA1BB2037079A;BB1F62DB6E493C4C;770FF1E7E284D5;CEB42C426FA5E77E
+[16696] 05 Nov 23:54:41.175 * Server initialized
+[16696] 05 Nov 23:54:41.202 * Reading RDB base file on AOF loading...
+[16696] 05 Nov 23:54:41.203 * Loading RDB produced by version 7.2.5
+[16696] 05 Nov 23:54:41.204 * RDB age 1287632 seconds
+[16696] 05 Nov 23:54:41.204 * RDB memory usage when created 0.72 Mb
+[16696] 05 Nov 23:54:41.205 * RDB is base AOF
+[16696] 05 Nov 23:54:41.206 * Done loading RDB, keys loaded: 0, keys expired: 0.
+[16696] 05 Nov 23:54:41.207 * DB loaded from base file appendonly.aof.1.base.rdb: 0.013 seconds
+[16696] 05 Nov 23:54:41.219 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.011 seconds
+[16696] 05 Nov 23:54:41.220 * DB loaded from append only file: 0.026 seconds
+[16696] 05 Nov 23:54:41.221 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+[16696] 05 Nov 23:54:41.222 * Ready to accept connections tcp
+[16696] 05 Nov 23:59:42.041 * 100 changes in 300 seconds. Saving...
+[16696] 05 Nov 23:59:42.051 * Background saving started by pid 18220
+[18220] 05 Nov 23:59:42.104 * DB saved on disk
+[16696] 05 Nov 23:59:42.169 * Background saving terminated with success
+[16696] 06 Nov 00:59:43.045 * 1 changes in 3600 seconds. Saving...
+[16696] 06 Nov 00:59:43.068 * Background saving started by pid 14512
+[14512] 06 Nov 00:59:43.138 * DB saved on disk
+[16696] 06 Nov 00:59:43.183 * Background saving terminated with success

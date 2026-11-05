@@ -1,0 +1,7 @@
+Local administrator
+Email: admin@areyouthere.local
+Password: a8TIXVWCgWRyYJGe57lKvMb4bag
+
+Dashboard: http://127.0.0.1:5173
+Django admin: http://127.0.0.1:8000/admin/
+Keep this file private. It is excluded from Git.

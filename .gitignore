@@ -1,14 +1,21 @@
-.venv/
+# Environment variables
 .env
 .env.*
 !.env.example
-node_modules/
-dist/
+
+# Python
+.venv/
+venv/
 __pycache__/
 *.pyc
-.runtime/
-*.log
-*.sqlite3
-test-results/
-playwright-report/
-.tools/
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
