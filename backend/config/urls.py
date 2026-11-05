@@ -1,0 +1,4 @@
+from django.contrib import admin
+from django.urls import path
+from core import views as v
+urlpatterns=[path('admin/',admin.site.urls),path('api/health/',v.health),path('api/auth/register/',v.register),path('api/auth/login/',v.login),path('api/auth/me/',v.me),path('api/sessions/',v.sessions),path('api/sessions/join/',v.join),path('api/classes/',v.directory),path('api/sessions/<int:pk>/',v.session_detail),path('api/sessions/<int:pk>/heartbeat/',v.heartbeat),path('api/sessions/<int:pk>/ticket/',v.socket_ticket),path('api/sessions/<int:pk>/questions/',v.questions),path('api/sessions/<int:pk>/questions/<int:qid>/',v.question_action),path('api/sessions/<int:pk>/questions/<int:qid>/answer/',v.answer),path('api/sessions/<int:pk>/questions/<int:qid>/reason/',v.reason),path('api/sessions/<int:pk>/reasons/<int:rid>/review/',v.review),path('api/sessions/<int:pk>/responses/<int:rid>/grade/',v.grade),path('api/sessions/<int:pk>/export/',v.export)]

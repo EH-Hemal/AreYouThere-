@@ -1,0 +1,46 @@
+.teacher-extension-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.teacher-extension-heading h1,.teacher-extension-title h1{font-size:21px;letter-spacing:-.5px;overflow-wrap:anywhere}
+.teacher-extension-session-list{display:grid;gap:9px}
+.teacher-extension-session-list>button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:15px;text-align:left;background:#fff;border:1px solid var(--border);border-radius:11px;color:var(--ink)}
+.teacher-extension-session-list>button:hover{border-color:#91bba6;background:#fbfdf9}
+.teacher-extension-session-list strong,.teacher-extension-session-list small{display:block;overflow-wrap:anywhere}
+.teacher-extension-session-list strong{font-size:13px;margin-bottom:5px}
+.teacher-extension-session-list small{font-size:10px;color:var(--muted)}
+.teacher-extension{display:grid;gap:13px;padding-bottom:25px;min-width:0}
+.teacher-extension>.btn:first-child{justify-self:start}
+.teacher-extension-title{display:flex;align-items:start;justify-content:space-between;gap:10px}
+.teacher-extension-title .eyebrow{margin-bottom:5px}
+.teacher-extension-code{display:flex;align-items:center;gap:9px;background:#e9f3e9;border:1px solid #d2e4d2;border-radius:11px;padding:13px;width:100%;color:#285c45}
+.teacher-extension-code span{font-size:9px;letter-spacing:1px;font-weight:700;margin-right:auto}
+.teacher-extension-code strong{font-size:19px;letter-spacing:2px}
+.teacher-extension-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.teacher-extension-actions .btn{white-space:normal;padding:8px;font-size:11px}
+.teacher-extension-actions .btn:only-child{grid-column:1/-1}
+.teacher-extension-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.teacher-extension-stats>div{background:white;border:1px solid var(--border);border-radius:9px;padding:11px 8px;min-width:0}
+.teacher-extension-stats strong{display:block;font-size:18px;color:#285c45}
+.teacher-extension-stats span{display:block;margin-top:3px;font-size:9px;color:var(--muted);line-height:1.25}
+.extension-shell .teacher-extension-section{padding:16px;min-width:0}
+.teacher-extension-section .card-heading{margin-bottom:11px}
+.teacher-extension-section>.muted{margin-top:12px}
+.teacher-extension-live{background:#f2f8f3;border:1px solid #d8e9da;border-radius:9px;padding:12px;margin-bottom:12px}
+.teacher-extension-live strong,.teacher-extension-questions strong{display:block;font-size:12px;overflow-wrap:anywhere}
+.teacher-extension-live p{font-size:10px;color:#607668;margin:7px 0}
+.teacher-extension-questions,.teacher-extension-students{display:grid;gap:0}
+.teacher-extension-questions article,.teacher-extension-students article,.teacher-extension-reason{border-top:1px solid var(--border);padding:12px 0}
+.teacher-extension-questions article:first-child,.teacher-extension-students article:first-child{margin-top:12px}
+.teacher-extension-questions .row-between,.teacher-extension-students .row-between,.teacher-extension-reason .row-between{align-items:start}
+.teacher-extension-questions strong{margin:8px 0 3px}
+.teacher-extension-question-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.teacher-extension-question-actions .btn{white-space:normal}
+.teacher-extension-students strong,.teacher-extension-reason strong{font-size:12px}
+.teacher-extension-students small{display:block;color:var(--muted);font-size:10px;margin-top:4px}
+.teacher-extension-students p{margin-top:7px;overflow-wrap:anywhere}
+.teacher-extension-reason p{font-size:11px;margin:7px 0;overflow-wrap:anywhere}
+.teacher-extension-reason form{margin-top:12px}
+.extension-shell .modal{padding:20px;width:min(540px,calc(100vw - 20px));max-height:calc(100vh - 20px)}
+.extension-shell .modal .form-grid{display:block}
+.extension-shell .option-editor{min-width:0}
+.extension-shell .option-editor input{min-width:0}
+.extension-shell .modal-actions{flex-wrap:wrap}
+@media(max-width:370px){.teacher-extension-actions{grid-template-columns:1fr}.teacher-extension-actions .btn{grid-column:1/-1}.teacher-extension-code strong{font-size:16px}}

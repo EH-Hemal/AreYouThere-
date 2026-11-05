@@ -1,0 +1,11 @@
+{
+ "manifest_version":3,"minimum_chrome_version":"120","name":"AreYouThere? · Class participation","version":"1.0.0",
+ "description":"A camera-free class companion. Join your class, answer quick questions, and review your participation.",
+ "permissions":["storage","alarms","notifications","sidePanel"],
+ "host_permissions":["http://127.0.0.1:8000/*"],
+ "action":{"default_title":"Open AreYouThere?"},
+ "background":{"service_worker":"background.js","type":"module"},
+ "side_panel":{"default_path":"extension/panel.html"},
+ "icons":{"16":"icon16.png","48":"icon48.png","128":"icon128.png"},
+ "content_security_policy":{"extension_pages":"script-src 'self'; object-src 'self'"}
+}

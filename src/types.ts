@@ -1,0 +1,7 @@
+export type User={id:number;name:string;email:string;role:'teacher'|'student';admin:boolean};
+export type Question={recovery_opens_at:string|null;recovery_closes_at:string|null;id:number;prompt:string;kind:'mcq'|'short';options:string[];correct_option?:number;duration:number;status:'draft'|'scheduled'|'open'|'closed';scheduled_at:string|null;opened_at:string|null;deadline:string|null;closed_at:string|null;schedule_error:string};
+export type Reason={id:number;text:string;status:'pending'|'accepted'|'rejected';review_note:string};
+export type Cell={question_id:number;participation:'not_eligible'|'answered'|'missed'|'awaiting';answer:string|null;correct:boolean|null;submitted_at:string|null;response_id:number|null;reason:Reason|null};
+export type Member={id:number;student_id:number;name:string;email:string;joined_at:string;connection:'connected'|'offline';last_seen:string|null;answered:number;missed:number;excused:number;eligible:number;cells:Cell[]};
+export type Room={class_duration:number;delivery_mode:string;question_duration:number;recovery_delay:number;recovery_duration:number;ends_at:string|null;next_question_at:string|null;id:number;title:string;course:string;code:string;status:'lobby'|'live'|'ended';teacher:string;questions:Question[];members:Member[];server_time:string;started_at:string|null;created_at:string;ended_at:string|null};
+export type SessionSummary={id:number;title:string;course:string;status:Room['status'];code:string;created_at:string;members:number;questions:number};
